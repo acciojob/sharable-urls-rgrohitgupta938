@@ -1,5 +1,6 @@
  const btn = document.getElementById("button");
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+		e.preventDefault();
       const h = document.getElementById("url");
       const name = document.getElementById("name").value;
       const year = document.getElementById("year").value;
